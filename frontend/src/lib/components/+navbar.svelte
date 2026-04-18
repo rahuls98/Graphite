@@ -1,3 +1,7 @@
+<script>
+	import Logo from "./+logo.svelte";
+</script>
+
 <nav data-topnav>
-	<strong><span>Graphite</span></strong>
+	<Logo />
 </nav>
