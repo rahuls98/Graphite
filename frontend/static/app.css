@@ -1,16 +1,14 @@
+@import url("/components/navbar.css");
+
+:root {
+	--text-color: rgb(50, 50, 50);
+	--highlight-color: #8B1A10;
+}
+
 * {
 	font-family: 'Noto Sans', sans-serif;
 	font-style: normal;
-}
-
-#logo span {
-	font-size: 16px;
-	font-weight: bold;
-	color: rgb(50, 50, 50);
-}
-
-nav {
-	padding: var(--space-4);
+	color: var(--text-color);
 }
 
 main {
