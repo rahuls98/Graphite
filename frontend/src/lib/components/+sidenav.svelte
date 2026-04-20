@@ -8,14 +8,21 @@
 			href: '/dashboard',
 		},
 		{
-			type: 'item',
+			type: 'group',
 			label: 'Knowledge',
-			href: '/knowledge',
-		},
-		{
-			type: 'item',
-			label: 'Explore',
-			href: '/explore',
+			hrefPrefix: '/knowledge',
+			children: [
+				{
+					type: 'item',
+					label: 'Ingest',
+					href: '/ingest',
+				},
+				{
+					type: 'item',
+					label: 'Network',
+					href: '/network',
+				},
+			]
 		},
 		{
 			type: 'group',
@@ -66,7 +73,7 @@
 								<li>
 									<a
 										href={sidenavItem.hrefPrefix + childItem.href}
-										aria-current={getAriaCurrent(childItem.href)}
+										aria-current={getAriaCurrent(sidenavItem.hrefPrefix + childItem.href)}
 										>{childItem.label}</a
 									>
 								</li>

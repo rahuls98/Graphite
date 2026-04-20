@@ -1,1 +1,1 @@
-<h1>General Settings</h1>
+<h2>General Settings</h2>

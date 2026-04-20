@@ -15,8 +15,8 @@ AI/enrichment layer for Graphite.
 1. Create and activate a virtual environment (recommended):
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
