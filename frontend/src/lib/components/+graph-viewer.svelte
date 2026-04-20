@@ -267,10 +267,6 @@
 	});
 </script>
 
-<svelte:head>
-	<link rel="stylesheet" href="/components/graph-viewer.css" />
-</svelte:head>
-
 <div id="graph-viewer-container">
 	{#if isLoading}
 		<div aria-busy="true" data-spinner="large"></div>
@@ -278,3 +274,17 @@
 		<svg bind:this={svgEl}></svg>
 	{/if}
 </div>
+
+<style>
+	#graph-viewer-container {
+		height: 100%;
+		width: 100%;
+		display: grid;
+		place-items: center;
+	}
+
+	#graph-viewer-container svg {
+		width: 100%;
+		height: 100%;
+	}
+</style>

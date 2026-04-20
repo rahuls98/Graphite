@@ -29,10 +29,16 @@
 	];
 </script>
 
-<svelte:head>
-	<link rel="stylesheet" href="/pages/knowledge-network.css" />
-</svelte:head>
-
 <div id="knowledge-network-container">
 	<GraphViewer {nodes} {links} />
 </div>
+
+<style>
+	#knowledge-network-container {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
